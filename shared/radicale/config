@@ -140,13 +140,13 @@
 
 # Rights backend
 # Value: None | authenticated | owner_only | owner_write | from_file | custom
-#type = None
+type = from_file
 
 # Custom rights handler
 #custom_handler =
 
 # File for rights management from_file
-#file = ~/.config/radicale/rights
+file = /etc/radicale/rights
 
 
 [storage]
@@ -187,6 +187,8 @@ filesystem_folder = /var/radicale
 
 [headers]
 
-# Additional HTTP headers
-#Access-Control-Allow-Origin = *
+Access-Control-Allow-Origin = *
+Access-Control-Allow-Methods = GET, POST, OPTIONS, PROPFIND, PROPPATCH, REPORT, PUT, MOVE, DELETE, LOCK, UNLOCK
+Access-Control-Allow-Headers = User-Agent, Authorization, Content-type, Depth, If-match, If-None-Match, Lock-Token, Timeout, Destination, Overwrite, X-client, X-Requested-With
+Access-Control-Expose-Headers = Etag
 
