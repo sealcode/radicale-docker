@@ -1,0 +1,5 @@
+radicale:
+  image: radicale:master
+  ports:
+    - "5232:5232"
+  restart: always
