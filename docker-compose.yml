@@ -2,4 +2,6 @@ radicale:
   image: radicale:master
   ports:
     - "5232:5232"
+  volumes:
+    - ./shared/radicale:/etc/radicale
   restart: always
