@@ -4,4 +4,5 @@ radicale:
     - "5232:5232"
   volumes:
     - ./shared/radicale:/etc/radicale
+    - ./shared/radicale-data:/var/radicale
   restart: always
