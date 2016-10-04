@@ -1,4 +1,4 @@
-rm Dockerfile
-wget https://raw.githubusercontent.com/Kozea/Radicale/master/Dockerfile
+# rm Dockerfile
+# wget https://raw.githubusercontent.com/Kozea/Radicale/master/Dockerfile
 
 docker build -t radicale:master .

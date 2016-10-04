@@ -163,7 +163,7 @@ file = /etc/radicale/rights
 #custom_handler =
 
 # Folder for storing local collections, created if not present
-filesystem_folder = /var/radicale
+filesystem_folder = /home/radicale/data
 
 # Database URL for SQLAlchemy
 # dialect+driver://user:password@host/dbname[?key=value..]
@@ -189,6 +189,7 @@ filesystem_folder = /var/radicale
 
 Access-Control-Allow-Origin = *
 Access-Control-Allow-Methods = GET, POST, OPTIONS, PROPFIND, PROPPATCH, REPORT, PUT, MOVE, DELETE, LOCK, UNLOCK
-Access-Control-Allow-Headers = User-Agent, Authorization, Content-type, Depth, If-match, If-None-Match, Lock-Token, Timeout, Destination, Overwrite, X-client, X-Requested-With
+Access-Control-Allow-Headers = User-Agent, Authorization, Content-type, Depth, If-match, If-None-Match, Lock-Token, Timeout, Destination, Overwrite, X-client, X-Requested-With, prefer
 Access-Control-Expose-Headers = Etag
 
+			      

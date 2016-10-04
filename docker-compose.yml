@@ -2,7 +2,10 @@ radicale:
   image: radicale:master
   ports:
     - "5232:5232"
+  environment:
+    UID: 33
+    GUID: 33
   volumes:
     - ./shared/radicale:/etc/radicale
-    - ./shared/radicale-data:/var/radicale
+    - ./shared/radicale-data:/home/radicale/data
   restart: always

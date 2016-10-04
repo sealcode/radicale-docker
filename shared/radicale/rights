@@ -8,5 +8,5 @@ permission: r
 [owner-write]
 user: .+
 # collection: ^%(login)s/.+$    # DOES NOT WORK
-collection: ^%(login)s(/.+)?$
+collection: ^%(login)s(/.*)?$
 permission: rw
