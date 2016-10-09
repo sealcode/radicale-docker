@@ -1,8 +1,5 @@
 radicale:
-  build: 
-    context: .
-    dockerfile: Dockerfile
-  image: radicale:master
+  build: "."
   ports:
     - "5232:5232"
   environment:

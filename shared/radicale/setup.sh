@@ -1,6 +1,6 @@
 #!/bin/sh
 
-adduser radicale -d /home/radicale -g $GID -u $UID
+adduser radicale -D /home/radicale -g $GID -u $UID
 
 su radicale
 
