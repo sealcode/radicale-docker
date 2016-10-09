@@ -1,0 +1,23 @@
+#/bin/bash
+
+if [ -f shared/radicale-data/$1.props ]; then
+	echo "user already exits!";
+	exit 0;
+fi
+
+mkdir -p _temp
+cp -R template/* _temp
+
+cd _temp
+
+mv username $1
+mv username.props $1.props
+cd $1
+
+cd ../../
+
+mv _temp/* shared/radicale-data
+
+rm -rf _temp
+
+echo "Initialized calendar for user $1"
